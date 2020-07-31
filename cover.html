@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+ <link rel="shortcut icon" href="default-monochrome-black.svg" />
+	<title>Atg-about us</title>
+	<style type="text/css">
+		
+		h1, h2, h3, h4, h5, h6 {
+    color: #2c3145;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section_all {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+.section-title {
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    letter-spacing: 0.4px;
+    line-height: 28px;
+    max-width: 550px;
+}
+
+.section-title-border {
+    background-color: black;
+    height: 1 3px;
+    width: 44px;
+}
+
+.section-title-border-white {
+    background-color: black;
+    height: 2px;
+    width: 100px;
+}
+.text_custom {
+    color: #00bd2a;
+}
+
+.about_icon i {
+    font-size: 22px;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 35px;
+    color: #00bd2a;
+    box-shadow: 0 8px 20px -2px rgba(158, 152, 153, 0.5);
+}
+
+.about_header_main .about_heading {
+    max-width: 450px;
+    font-size: 24px;
+}
+
+.about_icon span {
+    position: relative;
+    top: -10px;
+}
+
+.about_content_box_all {
+    padding: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section_all bg-light {
+  box-sizing: border-box;
+}
+
+video {
+  display: block;
+
+  height: 300px;
+  width: 600px;
+  margin: 50px auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h1, p {
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+h4{
+font-size: 35px;
+position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    *{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Ubuntu",sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 999;
+  transition: .3s linear;
+}
+
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.navbar .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+  
+
+.menu-toggler{
+  background: none;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  z-index: 999;
+  display: none;
+}
+
+.menu-toggler span{
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  position: relative;
+  transition: .3s linear;
+}
+
+.navbar-menu a{
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 30px;
+  transition: .2s linear;
+}
+
+.navbar-menu a:hover{
+  color: #FEE715FF !important;
+}
+
+.sticky{
+  background-color: #fff;
+  padding: 18px 0;
+}
+
+
+
+.sticky .navbar-menu a{
+  color: black;
+}
+
+.sticky .menu-toggler span{
+  background-color: #111;
+}
+
+
+.Home{
+  height: 100vh;
+  min-height: 500px;
+  background-image: url(wallpaperflare.com_wallpaper.jpg) center center fixed;
+  /*background: linear-gradient(to bottom right ,#5f7efc,#a29cfa)
+*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+
+}
+
+
+
+
+
+@media screen and (max-width:480px){
+  .menu-toggler{
+    display: block;
+  }
+
+  .navbar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color:#202225 ;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: .3s linear;
+  }
+
+  .navbar-menu a{
+    display: block;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .sticky .navbar-menu{
+    background-color: #202225;
+  }
+  
+  .navbar-menu.active{
+    right: 0;
+  }
+
+  .menu-toggler.active span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+
+  .menu-toggler.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu-toggler.active span:nth-child(3){
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+}
+}
+ body { 
+                
+                text-align:justify; 
+
+            } 
+
+	</style>
+
+</head>
+<body>
+	<section style="background-image: url(wallpaperflare.com_wallpaper.jpg);" class="Home">
+	 <div class="Home">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="inner-width">
+       
+       <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      
+      <div class="navbar-menu">
+        <a href="#Home">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">our costmers feedback</a>
+        <a href="#">Works</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+</nav>
+<section class="section_all bg-light" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section_title_all text-center">
+                            <h2 class="font-weight-bold">About Us:- <span class="text-custom">ATG</span></h2>
+                            <p class="section_subtitle mx-auto text-muted">We provide discord in a very low price nd also provide security <br/>we provide standard stuff .</p>
+                            <div class="">
+                                <i class=""></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <div class="row vertical_content_manage mt-5">
+                    <div class="col-lg-6">
+                        <div class="about_header_main mt-3">
+                            <div class="about_icon_box">
+                                <p class="text_custom font-weight-bold" style="font-size: 35px;">Why should you go with us </p>
+                            </div>
+                            <h4 class="about_heading text-capitalize font-weight-bold mt-4" >We provide discords at a very low prices  . </h4>
+                            <p class="text-muted mt-3">Sir Plz give your information so for now i writing some random stuff Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage. </p>
+
+                            <p class="text-muted mt-3"> So for the time biegn i writing down here anything .Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="img_about mt-1">
+                           
+
+<video controls poster="i8qztv1ucn3bhsttuz1q.webp"> 
+	
+  <source src="https://www.w3schools.com/html/mov_bbb.webm" type=video/webm> 
+  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type=video/ogg> 
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type=video/mp4>
+  <source src="https://www.w3schools.com/html/mov_bbb.3gp" type=video/3gp>
+  Video element not supported by your browser
+
+
+
+</video>
+	</div>
+</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+               <h1 style="color: black;"> What ATG's FiveM AntiCheat Detects</h1>
+               <pre style="color: black; text-align: center; font-family: sans-serif; font-size: 20px;">ATG's FiveM AntiCheat detects a wide range of cheats
+                   and is constantly being updated to protect 
+                             your server.                  </pre>
+
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="about_content_box_all mt-3">
+                            <div class="about_detail text-center">
+                                <div class="about_icon">
+                                    <i class='fas fa-bug'></i>
+                                </div>
+                                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Executer</h5>
+                                <p class="edu_desc mt-3 mb-0 text-muted">ATG's FiveM AntiCheat detects some of the most popular lua executors such as redENGINE, Eulen, & HamMafia. </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="about_content_box_all mt-3">
+                            <div class="about_detail text-center">
+                                <div class="about_icon">
+                                    <i class='fas fa-user-secret' style='font-size:36px'></i>
+                                </div>
+                                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Menus</h5>
+                                <p class="edu_desc mb-0 mt-3 text-muted">ATG's FiveM AntiCheat detects more than 70+ menu's used by cheaters, and is constantly being updated. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="about_content_box_all mt-3">
+                            <div class="about_detail text-center">
+                                <div class="about_icon">
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                </div>
+                                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Raw Code</h5>
+                                <p class="edu_desc mb-0 mt-3 text-muted">ATG's FiveM AntiCheat detects users trying to execute their raw code, thus removing any possible threats. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+</section>
+</body>
+</html>
